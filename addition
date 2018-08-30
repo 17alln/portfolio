@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=sv>
+    <head>
+        <meta charset="utf7">
+        <title>Addering av tal</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+              var tall, tal2, summa;             
+              tal1=parseFloat(prompt("Mata in första talet"));
+              tal2=parseFloat(prompt("Mata in andra talet"));
+              summa=tal1+tal2;            
+              alert("Summa: "+summa); 
+        </script>
+        <h1>Summera två tal</h1>
+        <p>tal 1:<input type="text" id="t1"></p>
+        <p>tal 2:<input type="text" id="t2"></p>
+        <button id="talSumma">Summa</button>
+        <br /><br />Summan blir: <p id="svarSumma"><p> 
+        <script type="text/javascript">var 
+        tal1,tal2,summa;document.getElementById("talSumma").onclick=function()
+        {
+        tal1=parseInt(document.getElementById("t1").value);
+        tal2=parseInt(document.getElementById("t2").value);
+        summa=tal1+tal2;
+        document.getElementById("svarSumma").innerHTML=summa;
+        }
+        </script>
+    
+    </body>
